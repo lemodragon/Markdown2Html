@@ -1,0 +1,272 @@
+/* 优雅墨绿主题 - 完整版 */
+#nice {
+  font-family: 'Crimson Text', Georgia, -apple-system, serif;
+  padding: 25px;
+  line-height: 1.5;
+  color: #2c3532;
+  background: #fcfdf8;
+}
+
+/* 段落 */
+#nice p {
+  margin: 0.5em 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2f3e46;
+  letter-spacing: 0.02em;
+}
+
+/* 一级标题 */
+#nice h1 {
+  font-size: 2.2em;
+  font-weight: 500;
+  margin: 1.2em 0 0.8em;
+  color: #2d5a27;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.03em;
+}
+
+#nice h1::before, #nice h1::after {
+  content: "❧";
+  display: inline-block;
+  margin: 0 0.5em;
+  color: #557c55;
+  font-size: 0.8em;
+}
+
+/* 二级标题 */
+#nice h2 {
+  font-size: 1.8em;
+  margin: 1em 0 0.6em;
+  color: #2d5a27;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #a7c4a2;
+  padding-bottom: 0.2em;
+}
+
+/* 三级标题 */
+#nice h3 {
+  font-size: 1.4em;
+  margin: 0.8em 0 0.4em;
+  color: #3a5a40;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  padding-left: 1em;
+}
+
+#nice h3::before {
+  content: "§";
+  position: absolute;
+  left: 0;
+  color: #a7c4a2;
+}
+
+/* 列表 */
+#nice ul, #nice ol {
+  margin: 0.6em 0;
+  padding-left: 1.8em;
+}
+
+#nice li {
+  margin: 0.3em 0;
+  color: #2f3e46;
+  position: relative;
+}
+
+#nice ul li::marker {
+  color: #557c55;
+}
+
+/* 引用块 */
+#nice blockquote {
+  margin: 1em 0;
+  padding: 1em;
+  background: #f5f7f3;
+  border-left: 4px double #557c55;
+  font-style: italic;
+}
+
+#nice blockquote p {
+  margin: 0;
+  color: #435a43;
+}
+
+/* 链接 */
+#nice a {
+  color: #2d5a27;
+  text-decoration: none;
+  border-bottom: 1px dotted #557c55;
+  transition: all 0.3s ease;
+}
+
+#nice a:hover {
+  color: #557c55;
+  border-bottom-style: solid;
+}
+
+/* 代码 */
+#nice code {
+  background: #f5f7f3;
+  color: #435a43;
+  padding: 2px 5px;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+/* 代码块 */
+#nice pre {
+  margin: 0.8em 0;
+  padding: 0;
+  background: none;
+  overflow-x: auto;
+}
+
+/* 代码块中的代码 */
+#nice pre code {
+  display: block;
+  background: #f5f7f3;
+  padding: 1em;
+  border: none;
+  margin: 0;
+}
+
+/* 多行代码块中的每一行 */
+#nice pre code > * {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 表格 */
+#nice table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+  border: 1px solid #e8ede5;
+}
+
+#nice th {
+  background: #f5f7f3;
+  color: #2d5a27;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+}
+
+#nice td, #nice th {
+  padding: 8px 12px;
+  border: 1px solid #e8ede5;
+}
+
+/* 图片 */
+#nice img {
+  max-width: 100%;
+  border-radius: 4px;
+  height: auto;
+  margin: 1em auto;
+  display: block;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* 分割线 */
+#nice hr {
+  margin: 1.5em 0;
+  height: 1px;
+  border: none;
+  background: repeating-linear-gradient(90deg, #a7c4a2 0, #a7c4a2 5px, transparent 5px, transparent 12px);
+}
+
+/* 强调 */
+#nice strong {
+  color: #2d5a27;
+  font-weight: 600;
+  padding: 0 2px;
+}
+
+#nice em {
+  color: #435a43;
+  font-style: italic;
+}
+
+/* 删除线 */
+#nice del {
+  color: #557c55;
+  text-decoration: line-through;
+}
+
+/* 脚注 */
+#nice .footnotes {
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid #e8ede5;
+  font-size: 0.9em;
+  color: #557c55;
+}
+
+#nice .footnote-word {
+  color: #2d5a27;
+  font-weight: normal;
+}
+
+#nice .footnote-ref {
+  color: #2d5a27;
+  font-weight: normal;
+}
+
+#nice .footnote-item {
+  color: #435a43;
+  font-size: 0.9em;
+}
+
+#nice .footnote-item p {
+  color: #435a43;
+  margin: 0.3em 0;
+}
+
+#nice .footnote-item em {
+  color: #557c55;
+  font-style: italic;
+}
+
+/* 行内公式 */
+#nice .inline-equation svg {
+  vertical-align: middle;
+  margin: 0 0.1em;
+}
+
+/* 块级公式 */
+#nice .block-equation {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* 目录 */
+#nice .toc {
+  margin: 1em 0;
+  padding: 1em;
+  background: #f5f7f3;
+  border: 1px solid #e8ede5;
+  border-radius: 4px;
+}
+
+#nice .toc ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+#nice .toc li {
+  margin: 0.2em 0;
+}
+
+#nice .toc a {
+  color: #2d5a27;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+#nice .toc a:hover {
+  color: #557c55;
+  border-bottom: 1px dotted #557c55;
+}
